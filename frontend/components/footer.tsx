@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone } from "lucide-react"
+import logoManga from "@/public/logo-manga.png"
 
 export default function Footer() {
   return (
@@ -8,8 +9,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <div className="bg-gradient-to-r from-orange-500 to-red-500 w-8 h-8 rounded-md mr-2"></div>
-              <span className="text-xl font-bold">SaaSPro</span>
+              <img src={logoManga.src} alt="Logo" className="h-10 w-10 mr-2 rounded-md" />
+              <span className="text-xl font-bold">MangaTech</span>
             </div>
             <p className="text-gray-400 mb-4">Soluções SaaS inovadoras para empresas de todos os tamanhos.</p>
             <div className="flex space-x-4">
@@ -125,7 +126,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              &copy; {new Date().getFullYear()} SaaSPro. Todos os direitos reservados.
+              &copy; {new Date().getFullYear()} MangaTech. Todos os direitos reservados.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="#" className="text-gray-400 hover:text-white text-sm">
